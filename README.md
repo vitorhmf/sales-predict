@@ -8,13 +8,13 @@
 
 This Data Science project was inspired by a challenge published on [kaggle](https://www.kaggle.com/c/rossmann-store-sales) and presents the construction of a Machine Learning algorithm to predict the 6-week sales of the Rossmann group, which is one of the largest drug store chains in Europe with around 56,200 employees and more than 4000 stores.
 
-To develop this sales projection, was used a dataset with information from 1115 stores, between 2013-01-01 and 2015-07-31. The trained Regression Algorithm reached 88% of MAPE and the estimated result of the total sales for the period was $287.176.128,00.
+To develop this sales projection, was used a dataset with information from 1115 stores, between 2013-01-01 and 2015-07-31. The trained Regression Algorithm reached 88% of MAPE and the estimated result of the total sales for the period was $287.176.128,00. All the solution was developed with Python language and the complete code is available in this [notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v07_sales_forecast_deploy.ipynb).
 
-The solution was deployed on the Heroku Cloud and the sales forecasts can be accessed through a Telegram bot available [here](https://t.me/vitorhmf_rossmann_bot).
+The solution was deployed at Heroku Cloud and the sales forecasts can be accessed through a Telegram bot available [here](https://t.me/vitorhmf_rossmann_bot).
 
 <img src="img/bot_telegram.jpg" width="250">
 
-**Keywords:** Python, Regression Model, XGBoost, Scikit Learn, Pandas, Seaborn, Boruta, Flask, Heroku
+**Keywords:** Python, Regression Model, Random Forest, XGBoost, Scikit Learn, Pandas, Seaborn, Boruta, Flask, Heroku
 
 ## 2. Methodology
 
@@ -69,6 +69,8 @@ For this project, it was used a dataset containing sales information from 1115 s
 * Days when the stores were closed, were not considered
 * For the missing values in the "Competition Open Since" variable, the approximate year and month were defined as the value from the column Date. 
 * The same was done for the variable "Promo 2 Since".
+
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
  
 ## 4. Data Understanding
 
@@ -124,8 +126,7 @@ In the data exploration, univariate, bivariate and multivariate analyzes were pe
 
 <img src="img/promo_time_week.png" width="800">
 
-
-In this [notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v02_sales_forecast_eda.ipynb) it is possible to check the complete EDA.
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
  
 ## 5. Data Preparation
 
@@ -134,6 +135,8 @@ In this [notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks
 * Encoding - applied to categorical variables
 * Nature Transformation - for cyclic variables such as month, day and week a sine and cosine transformation was applied
 * Feature Selection: the variables to be used in the machine learning model were selected using the Boruta algorithm
+
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 6. Machine Learning Modeling
 
@@ -158,12 +161,39 @@ The parameters used to achieve these results were:
  * colsample_bytree: 0.7
  * min_child_weight: 3
 
-[Back](https://github.com/vitorhmf/sales-predict/edit/main/README.md#2-methodology)
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 7. Evaluation
 
-## 8. Depoyment
+
+
+<img src="img/ml_evaluation.png" width= "1000">
+
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+
+## 8. Deployment
+
+
+[API Code](https://github.com/vitorhmf/sales-predict/tree/main/api)
+
+[BOT Code](https://github.com/vitorhmf/sales-predict/tree/main/rossmann-telegram-api)
+
+
+
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 9. Conclusion
 
+### 9.1. Business Results
+
+The total revenue forecast for the next 6 weeks is presented below, considering the worst and best scenario according to the model. And the detailed sales forecast by store can be consulted through a Telegram bot, available at this [link](https://t.me/vitorhmf_rossmann_bot).
+
+<img src="img/final_result.png" width="300">
+
+### 9.2. Next Steps
+
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+
 ## 10. References
+
+[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
