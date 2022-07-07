@@ -28,12 +28,12 @@ CRISP-DM, which stands for Cross-Industry Standard Process for Data Mining, is a
 
 To direct your reading, below are links to the development carried out at each stage of the CRISP cycle:
 
-* [Business Understanding](https://github.com/vitorhmf/sales-predict/edit/main/README.md#3-business-understanding)
-* [Data Understanding](https://github.com/vitorhmf/sales-predict/edit/main/README.md#4-data-understanding)
-* [Data Preparation](https://github.com/vitorhmf/sales-predict/edit/main/README.md#5-data-preparation)
-* [Machine Learning Modeling](https://github.com/vitorhmf/sales-predict/edit/main/README.md#6-machine-learning-modeling)
-* [Evaluation](https://github.com/vitorhmf/sales-predict/edit/main/README.md#7-evaluation)
-* [Depoyment](https://github.com/vitorhmf/sales-predict/edit/main/README.md#8-deployment)
+* [Business Understanding](https://github.com/vitorhmf/sales-predict#3-business-understanding)
+* [Data Understanding](https://github.com/vitorhmf/sales-predict#4-data-understanding)
+* [Data Preparation](https://github.com/vitorhmf/sales-predict#5-data-preparation)
+* [Machine Learning Modeling](https://github.com/vitorhmf/sales-predict#6-machine-learning-modeling)
+* [Evaluation](https://github.com/vitorhmf/sales-predict#7-evaluation)
+* [Depoyment](https://github.com/vitorhmf/sales-predict#8-deployment)
 
 ## 3. Business Understanding
 
