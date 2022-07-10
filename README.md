@@ -70,7 +70,7 @@ For this project, it was used a dataset containing sales information from 1115 s
 * For the missing values in the "Competition Open Since" variable, the approximate year and month were defined as the value from the column Date. 
 * The same was done for the variable "Promo 2 Since".
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+[Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
  
 ## 4. Data Understanding
 
@@ -126,7 +126,7 @@ In the data exploration, univariate, bivariate and multivariate analyzes were pe
 
 <img src="img/promo_time_week.png" width="800">
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+[Complete Notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v02_sales_forecast_eda.ipynb) | [Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
  
 ## 5. Data Preparation
 
@@ -136,7 +136,7 @@ In the data exploration, univariate, bivariate and multivariate analyzes were pe
 * Nature Transformation - for cyclic variables such as month, day and week a sine and cosine transformation was applied
 * Feature Selection: the variables to be used in the machine learning model were selected using the Boruta algorithm
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+[Complete Notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v04_sales_forecast_feature_selection.ipynb) | [Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 6. Machine Learning Modeling
 
@@ -161,26 +161,26 @@ The parameters used to achieve these results were:
  * colsample_bytree: 0.7
  * min_child_weight: 3
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+[Complete Notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v06_sales_forecast_fine_tunning.ipynb) | [Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 7. Evaluation
 
-
-
 <img src="img/ml_evaluation.png" width= "1000">
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+[Complete Notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v06_sales_forecast_fine_tunning.ipynb) | [Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 8. Deployment
 
+* **1. Telegram bot:** the bot receives the Telegram message, validates the information and forwards the data to the Handler API. The code was built using the Flask package and deployed on heroku cloud. [Here](https://github.com/vitorhmf/sales-predict/blob/main/rossmann-telegram-api/rossmann-bot.py) you can check the complete Telegram bot code.
+* **2. Handler API:** this API receives the data from the bot, accesses the trained model and returns the prediction to the bot. The code was built using the Flask package and deployed on heroku cloud. [Here](https://github.com/vitorhmf/sales-predict/blob/main/api/handler.py) you can check the complete Handler API code.
+* **3. Rossmann Class:** the Rossmann Class runs the developed machine learning model and returns with the requested sales forecast. [Here](https://github.com/vitorhmf/sales-predict/blob/main/api/rossmann/Rossmann.py) you can check the complete class code.
 
-[API Code](https://github.com/vitorhmf/sales-predict/tree/main/api)
+The final solution could be access [here](https://t.me/vitorhmf_rossmann_bot).
 
-[BOT Code](https://github.com/vitorhmf/sales-predict/tree/main/rossmann-telegram-api)
+<img src="img/bot_telegram.jpg" width="250">
 
 
-
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+[Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 9. Conclusion
 
@@ -192,8 +192,16 @@ The total revenue forecast for the next 6 weeks is presented below, considering 
 
 ### 9.2. Next Steps
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+* Rerun the CRISP cycle to improve machine learning model results.
+* Add new functionality in Telegram bot to improve user experience.
+
+[Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
 
 ## 10. References
 
-[Back](https://github.com/vitorhmf/sales-predict#2-methodology)
+* [IBM Docs](https://www.ibm.com/docs/en/spss-modeler/18.2.0?topic=dm-crisp-help-overview)
+* [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/data)
+* [Telegram Bot API](https://core.telegram.org/bots/api)
+* [Comunidade DS](https://www.comunidadedatascience.com/)
+
+[Back to the top](https://github.com/vitorhmf/sales-predict#2-methodology)
