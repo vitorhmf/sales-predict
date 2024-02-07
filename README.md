@@ -10,7 +10,7 @@ This Data Science project was inspired by a challenge published on [kaggle](http
 
 To develop this sales projection, was used a dataset with information from 1115 stores, between 2013-01-01 and 2015-07-31. The trained Regression Algorithm reached 88% of MAPE (Mean Absolute Percentage Error) and the estimated result of the total sales for the period was $287.176.128,00. All the solution was developed with Python language and the complete code is available in this [notebook](https://github.com/vitorhmf/sales-predict/blob/main/notebooks/v07_sales_forecast_deploy.ipynb).
 
-The solution was deployed at Heroku Cloud and the sales forecasts can be accessed through a Telegram bot available [here](https://t.me/vitorhmf_rossmann_bot).
+The solution was deployed at Heroku Cloud and the sales forecasts can be accessed through a Telegram bot, however, due to maintenance costs, it was taken down.
 
 <img src="img/bot_telegram.jpg" width="250">
 
@@ -175,8 +175,6 @@ The parameters used to achieve these results were:
 * **2. Handler API:** this API receives the data from the bot, accesses the trained model and returns the prediction to the bot. The code was built using the Flask package and deployed on heroku cloud. [Here](https://github.com/vitorhmf/sales-predict/blob/main/api/handler.py) you can check the complete Handler API code.
 * **3. Rossmann Class:** the Rossmann Class runs the developed machine learning model and returns with the requested sales forecast. [Here](https://github.com/vitorhmf/sales-predict/blob/main/api/rossmann/Rossmann.py) you can check the complete class code.
 
-The final solution could be access [here](https://t.me/vitorhmf_rossmann_bot).
-
 <img src="img/bot_telegram.jpg" width="250">
 
 
@@ -186,7 +184,7 @@ The final solution could be access [here](https://t.me/vitorhmf_rossmann_bot).
 
 ### 9.1. Business Results
 
-The total revenue forecast for the next 6 weeks is presented below, considering the worst and best scenario according to the model. And the detailed sales forecast by store can be consulted through a Telegram bot, available at this [link](https://t.me/vitorhmf_rossmann_bot).
+The total revenue forecast for the next 6 weeks is presented below, considering the worst and best scenario according to the model. And the detailed sales forecast by store can be consulted through a Telegram bot, however, due to maintenance costs, it was taken down.
 
 <img src="img/final_result.png" width="300">
 
